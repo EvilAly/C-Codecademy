@@ -1,0 +1,17 @@
+//converts temperatures from Fahrenheit (F) to Celsuis (C)
+#include <iostream>
+
+int main() {
+    
+  //temperature in New York
+  double tempf = 91;
+  double tempc;
+
+  //calculate Celsuis (C)
+  tempc = (tempf - 32)/1.8;
+  
+  //display results
+  std::cout << "The temp is " << tempc << " degrees Celsius.\n";
+  
+  
+}
