@@ -1,0 +1,26 @@
+#include <iostream>
+
+int main() {
+  int year;
+  bool leap = false;
+
+  //Get year
+  std::cout << "Please enter a 4-digit year:\n";
+  std::cin >> year;
+  
+  //Validate year
+  if (year < 1000) {
+    std::cout << "Invalid year\n";
+  } else {
+ //Is leap year?
+      if (year % 400 == 0 || (year % 4==0 && (!(year%100==0)))) {
+        leap = true;
+               }
+  }
+if (leap){
+  std::cout << "Leap year: true\n";
+} else {
+std::cout << "Leap year: false\n";
+}
+  
+}
