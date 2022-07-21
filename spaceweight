@@ -1,0 +1,48 @@
+#include <iostream>
+
+int main() {
+  double weight;
+  int visit;
+  
+
+  //ask earth weight
+  std::cout << "What is your weight on Earth?\n";
+  std::cin >> weight;
+
+  //Which planet to visit?
+  std::cout << "Which planet do you want to visit?\n";
+  std::cout << "1. Mercury\n";
+  std::cout << "2. Venus\n";
+  std::cout << "3. Mars\n";
+  std::cout << "4. Jupiter\n";
+  std::cout << "5. Saturn\n";
+  std::cout << "6. Uranus\n";
+  std::cout << "7. Neptune\n";
+  std::cin >> visit;
+
+  //compute weight
+  switch (visit) {
+    case 1:
+      weight = weight * 0.38;
+      break;
+    case 2:
+      weight = weight * 0.91;
+      break;
+    case 3:
+      weight = weight * 0.38;
+      break;
+    case 4:
+      weight = weight * 2.34;
+      break;
+    case 5:
+      weight = weight * 1.06;
+      break;
+    case 6:
+      weight = weight * 0.92;
+      break;
+    case 7:
+      weight = weight * 1.19;
+      break;
+  }
+
+std::cout << "You would weigh " << weight << "\n";  
