@@ -1,0 +1,25 @@
+#include <iostream>
+#include <vector>
+  
+int main() {
+  //set vector of numbers
+  std::vector<int> nums = {2, 4, 3, 6, 1, 9};
+
+  int sum = 0;
+  int prod = 1;
+
+  //loop through vector
+  //find the sum of even numbers
+  //find the product of odd numbers
+  for (int i=0; i < nums.size(); i++) {
+    if (nums[i]%2==0){
+      sum = sum + nums[i];
+    } else {
+      prod = prod * nums[i];
+    }
+  }
+
+//print results
+  std::cout << "Sum of even numbers is " << sum << "\n";
+  std::cout << "Product of odd numbers is " << prod << "\n";
+}
