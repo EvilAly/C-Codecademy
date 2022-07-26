@@ -1,5 +1,7 @@
 #include <iostream>
 
+//create average() function that will return the average of two numbers
+
 // Define average() here:
 double average(double num1, double num2) {
   return (num1 + num2)/2;
