@@ -1,0 +1,28 @@
+#include <iostream>
+
+/*create function that accepts number of days since last water and if the plant is a succulent
+conditional logic given:
+  is not succulent and days greater than 3 - time to water
+  is succulent and days 12 or less - don't water
+  is succulent and 13 or more days - little water
+  otherwise - don't water
+  */
+
+// Define needs_water() here:
+std::string needs_water(int days, bool is_succulent) {
+  std::string water = "Don't water the plant!";
+  if (!is_succulent) {
+    if (days > 3) {
+      water = "Time to water the plant.";
+    }
+  } else if (days >= 13) {
+    water = "Go ahead and give the plant a little water.";
+  }
+  return water;
+}
+
+int main() {
+  
+  std::cout << needs_water(10, false) << "\n";
+  
+}
