@@ -1,6 +1,8 @@
 #include <iostream>
 #include <cmath>
 
+//create function that will return the value of a number to the tenth power
+
 // Define tenth_power() here:
 int tenth_power(int num) {
   return pow(num, 10);
